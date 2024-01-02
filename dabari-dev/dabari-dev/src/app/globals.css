@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./fonts.css";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.font-cenios {
+  font-family: "Cenios Demo Regular", sans-serif;
+}
+
+.font-aktifoa {
+  font-family: "Aktifoa Medium", sans-serif;
+}
+
+.font-aktifoa-bold {
+  font-family: "Aktifoa Bold", sans-serif;
+}
+
+.font-aktifoa-light {
+  font-family: "Aktifoa Light", sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    45deg,
+    #bfbfbc,
+    #bcb8ae,
+    #a5a5a1,
+    #d5d7d4,
+    #91918b,
+    #fff9e7,
+    #bebaaf,
+    #b8bab9,
+    #f4f1e5
+  ); /* Adjust the height as needed */
+}
+.step-gradient-bg {
+  background: linear-gradient(
+    77.92deg,
+    #575756 -104.65%,
+    #c6c6c6 -63.7%,
+    #eaeaea -33.15%,
+    #cac8c7 -6.4%,
+    #c9c4bc 16.61%,
+    #b2b0ad 40.19%,
+    #dddddd 63.05%,
+    #a09d98 81.14%,
+    #fffaef 98.21%,
+    #c9c4bc 115.17%,
+    #c4c4c4 139.57%,
+    #f7f4ec 163.4%,
+    #a09f9d 182.31%,
+    #c6c4be 196.71%,
+    #c2c1c1 214.5%,
+    #999796 241.2%,
+    #f2f1eb 263.55%,
+    #d8d8d7 282.72%,
+    #f4f2ef 310.65%,
+    #c4c4c4 322.33%,
+    #a8a59e 342.27%,
+    #e2dfd9 362.36%,
+    #c6c6c6 381.48%
+  );
+}
+
+.step-border-color {
+  background: rgba(237, 237, 237, 0.198);
+  position: relative;
+}
+
+.button-background {
+  background: rgba(237, 237, 237, 0.383);
+  position: relative;
+}
+
+.applying-gradient-background {
+  background: linear-gradient(
+    270deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.1469) 85.31%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.safe-gradient-background {
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 0%,
+    rgba(245, 236, 236, 0.426) 85.31%,
+    rgba(240, 232, 232, 0.285) 100%
+  );
+}
+
+.vip-gradient-background {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0.12%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.mobile-vip-gradient-background {
+  background: linear-gradient(
+    0deg,
+    #ffffff 38.35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.mobile-header-gradient-background {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 2, 3, 0.5) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.desktop-header-gradient-background {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 2, 3, 0.087) 40%,
+    rgba(78, 91, 105, 0.4) 100%
+  );
+}
+
+.contact_us-gradient-background {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.9964) 22.02%,
+    rgba(255, 255, 255, 0.9135) 28.51%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.top-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  /* &--icon {
+    animation: gototop 1.2s linear infinite alternate-reverse;
+  } */
+
+  @keyframes gototop {
+    0% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(1rem);
+    }
+  }
+}
+
+.layout-gradient {
+  background: linear-gradient(
+    252.62deg,
+    #85aed5 -6.58%,
+    #7ba0c3 -1.15%,
+    #6886a3 10.62%,
+    #587088 23.37%,
+    #4c6074 37.26%,
+    #445465 52.84%,
+    #3f4d5d 71.52%,
+    #8899ac 101.5%
+  );
+}
+
+.layout-gradient-mobile {
+  background: linear-gradient(
+    252.62deg,
+    #91b1d1 -4.43%,
+    #7ba0c3 -1.15%,
+    #6886a3 12.31%,
+    #587088 23.37%,
+    #4c6074 37.26%,
+    #445465 65.74%,
+    #3f4d5d 71.52%,
+    #3d4b5a 101.5%
+  );
+}
+
+.bubble-gradient {
+  background: linear-gradient(
+    252.09deg,
+    #85aed5 -30.23%,
+    #6a89a7 11.5%,
+    #52687e 55.96%,
+    #435364 90.93%,
+    #3d4b5a 111.79%
+  );
+}
